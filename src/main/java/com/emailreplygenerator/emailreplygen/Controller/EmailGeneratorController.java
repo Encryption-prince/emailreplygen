@@ -3,14 +3,13 @@ package com.emailreplygenerator.emailreplygen.Controller;
 import com.emailreplygenerator.emailreplygen.Model.EmailRequest;
 import com.emailreplygenerator.emailreplygen.Service.EmailGeneratorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(value = "*")
 @RequestMapping("/api/email")
 public class EmailGeneratorController {
 
