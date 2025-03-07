@@ -2,7 +2,7 @@
 
 Effortlessly generate professional and context-aware email replies using the power of AI! 🚀 This backend service utilizes **Spring Boot, REST API and the Gemini API** to generate smart responses, making email management smoother and more efficient.
 
-🔗 **Live Demo:** [Click Here](ai-powered-mail-reply-generator.vercel.app)   
+🔗 **Live Demo:** [Click Here](https://ai-powered-mail-reply-generator.vercel.app/)   
 🦊 **Firefox Extension:** [Install Now](https://addons.mozilla.org/en-US/firefox/addon/email-reply-generator/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
 ---
