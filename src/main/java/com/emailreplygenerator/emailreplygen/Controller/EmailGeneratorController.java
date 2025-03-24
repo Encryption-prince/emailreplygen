@@ -16,9 +16,20 @@ public class EmailGeneratorController {
     @Autowired
     private EmailGeneratorService emailGeneratorService;
 
+    @Value("${gemini.api.url}")
+    private String geminiApiUrl;
+    @Value("${gemini.api.key}")
+    private String geminiApiKey;
+
     @PostMapping("/generate")
     public ResponseEntity<String> generateEmail(@RequestBody EmailRequest emailRequest){
         String response = emailGeneratorService.generateEmailReply(emailRequest);
         return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/show")
+    public ResponseEntity<?> show(){
+        System.out.println(geminiApiKey+""+geminiApiUrl);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
