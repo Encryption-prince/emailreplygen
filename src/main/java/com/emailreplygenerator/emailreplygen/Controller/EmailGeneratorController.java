@@ -27,9 +27,4 @@ public class EmailGeneratorController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @GetMapping("/show")
-    public ResponseEntity<?> show(){
-        System.out.println(geminiApiKey+""+geminiApiUrl);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
 }
